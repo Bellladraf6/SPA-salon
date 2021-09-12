@@ -1,0 +1,1023 @@
+@font-face {
+    font-family: "Marguaritas";
+    src: url("../fonts/Marguaritas.ttf");
+}
+
+@font-face {
+    font-family: "Nunito ExtraBold";
+    src: url("../fonts/Nunito-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito SemiBold";
+    src: url("../fonts/Nunito-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Regular";
+    src: url("../fonts/Nunito-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Nunito Bold";
+    src: url("../fonts/Nunito-Bold.woff");
+}
+
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("../fonts/Myriad Pro.ttf");
+}
+
+body, h3, h5, h4, h2 {
+    margin: 0;
+}
+
+/*ОБЩИЕ КЛАССЫ*/
+.logo a, .logo {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-main {
+    font-family: "Marguaritas", serif;
+    font-size: 55px;
+    color: #430639;
+}
+
+.logo-text {
+    font-family: "Nunito SemiBold", sans-serif;
+    font-size: 10px;
+    color: #430639;
+    text-transform: uppercase;
+}
+
+.tel {
+    font-size: 14px;
+    font-family: "Nunito SemiBold", sans-serif;
+}
+
+.tel a, .tel {
+    text-decoration: none;
+    color: rgb(44, 5, 38);
+    text-align: end;
+}
+
+/*общий класс для заголовков*/
+.block-title {
+    margin: 0 0 31px 0;
+    color: rgb(67, 6, 57);
+    font-family: "Nunito Bold", sans-serif;
+    font-size: 30px;
+}
+
+/*кнопка*/
+.banner-action .btn, .btn {
+    width: 259px;
+    padding: 18px;
+    font-size: 16px;
+    line-height: 14px;
+    background-color: rgb(114, 17, 99);
+    box-sizing: border-box;
+    font-family: "Nunito SemiBold", sans-serif;
+    color: rgb(255, 255, 255);
+    outline: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 0;
+}
+
+/*ОБЩИЕ КЛАССЫ*/
+
+
+#main {
+    background: url("../images/main-bg.png");
+    height: 862px;
+}
+
+#main #header {
+    background-image: url("../images/header-bg.png");
+    height: 114px;
+}
+
+#header-container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header #menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+#header #menu a {
+    font-family: "Nunito SemiBold", sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    color: rgb(44, 5, 38);
+    border-bottom: 1px solid transparent;
+}
+
+#header #menu a.active {
+    font-family: "Nunito ExtraBold", sans-serif;
+    color: rgb(114, 17, 99);
+    border-bottom: 1px solid rgb(114, 17, 99);
+}
+
+#header .logo {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#main .tel {
+    width: 350px;
+}
+
+#banner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 160px;
+}
+
+#banner .block-title {
+    font-size: 36px;
+    width: 500px;
+}
+
+#banner .block-title span {
+    font-size: 70px;
+    font-family: "Marguaritas", sans-serif;
+}
+
+#banner #banner-text {
+    font-size: 20px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.25;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+#advantages {
+    background-image: url("../images/roses-bg1.png");
+    padding-bottom: 191px;
+    background-size: 100%;
+    padding-top: 150px;
+    background-repeat: no-repeat;
+}
+
+#advantages-container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#advantages #advantages-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+#advantages #advantages-first-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+#advantages #advantages-second-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+    width: 970px;
+    margin-left: 100px;
+}
+
+#advantages .advantages-item {
+    display: flex;
+    align-items: center;
+}
+
+#advantages .advantages-item span {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: #2c0526;
+    line-height: 1.2;
+    max-width: 282px;
+    margin-left: 30px;
+}
+
+#services {
+    background: url("../images/roses-bg2.png") no-repeat;
+    position: relative;
+}
+
+#services-container {
+    margin: 0 auto;
+    width: 1200px;
+    padding-bottom: 114px;
+}
+
+#services #services-text {
+    font-size: 16px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    max-width: 575px;
+    margin-bottom: 70px;
+}
+
+#services-products {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+}
+
+#services .services-product {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0 2px 16.56px 1.44px rgba(44, 5, 38, 0.1);
+    width: 282px;
+}
+
+#services .services-product-body {
+    padding: 30px 15px;
+}
+
+#services .services-product-title {
+    font-size: 16px;
+    font-family: "Nunito Bold", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-bottom: 17px;
+}
+
+#services div.services-product-text {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.357;
+    width: 245px;
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+#services .services-product-duration {
+    font-size: 12px;
+    font-family: "Nunito SemiBold", sans-serif;
+    color: rgb(114, 17, 99);
+    margin-bottom: 20px;
+}
+
+#services .services-product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#services .services-product-price {
+    font-size: 16px;
+    font-family: "Nunito Bold", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#services .services-action .btn {
+    font-size: 16px;
+    width: 131px;
+    padding: 14px;
+    line-height: 0.8;
+}
+
+#services #lavender {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#stock {
+    height: 558px;
+    background-color: rgb(245, 244, 243);
+    background-repeat: no-repeat;
+    background-image: url("../images/roses-bg3.png"), url("../images/right-ellipse.png"),
+    url("../images/left-ellipse.png"), url("../images/stock-bg.png");
+}
+
+#stock-container {
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 160px;
+}
+
+#stock #stock-text {
+    font-size: 18px;
+    font-family: "Nunito SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    width: 355px;
+    margin-bottom: 30px;
+}
+
+#stock .banner-action .btn {
+    font-family: "Myriad Pro Regular", sans-serif;
+    width: 232px;
+}
+
+#masters {
+    padding-top: 138px;
+    background-image: url("../images/masters-bg.png");
+    background-position: 100% -2%;
+    height: 955px;
+    background-repeat: no-repeat;
+}
+
+#masters-container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#masters .masters-text {
+    font-size: 16px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    width: 505px;
+    margin-bottom: 46px;
+}
+
+/*основной контейнер карусели*/
+#masters .masters-carousel {
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 32px;
+}
+
+#masters .slick-track {
+    display: flex;
+}
+
+#masters .slick-initialized .slick-slide {
+    display: flex;
+}
+
+/*стили для картинок в слике*/
+#masters .slick-slide img {
+    margin: 0 12px;
+}
+
+/*навигация картинок слика*/
+#masters .content-slick {
+    position: relative;
+    width: 63px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*позиционирование левой стрелки*/
+#masters .slick-prev {
+    left: -14px;
+}
+
+/*позиционирование правой стрелки*/
+#masters .slick-next {
+    right: -14px;
+}
+
+/*меняю вид стрелки*/
+#masters .slick-prev:before {
+    content: url("../images/prev.png");
+}
+
+/*меняю вид стрелки*/
+#masters .slick-next:before {
+    content: url("../images/next.png");
+}
+
+/*обертка для dots*/
+#masters .slick-dots {
+    position: static;
+}
+
+/*стиль неактивных dots*/
+#masters .slick-dots li button {
+    font-size: 18px;
+    font-family: "Nunito Regular", sans-serif;
+    color: #ab84a3;
+}
+
+/*убирает точки на цифрах*/
+#masters .slick-dots li button:before {
+    content: '';
+}
+
+/*активные dots*/
+#masters .slick-dots li.slick-active button {
+    color: #721163;
+}
+
+/*позиционирование relative для надписей*/
+#masters .master {
+    position: relative;
+}
+
+/*стиль для блоков на картинках*/
+#masters .master-block-text {
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.749;
+    width: 251px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+/*стиль для текста на картинках*/
+#masters .master-block-text .master-name {
+    font-size: 18px;
+    font-family: "Nunito Bold", sans-serif;
+    color: rgb(44, 5, 38);
+    font-weight: bold;
+    line-height: 14px;
+    margin-bottom: 15px;
+}
+
+/*стиль для текста на картинках*/
+#masters .master-block-text .experience {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.2;
+    z-index: 268;
+}
+
+#gallery {
+    padding-bottom: 190px;
+    background-image: url("../images/gallery-roses.png");
+    background-repeat: no-repeat;
+    background-position: 30% 75%;
+    margin-top: -255px;
+}
+
+#gallery-container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#gallery .gallery-text {
+    font-size: 16px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.313;
+    width: 680px;
+    margin-bottom: 35px;
+}
+
+
+/*стиль неактивных картинов в галерее*/
+.gallery-carousel img {
+    position: relative;
+    opacity: 0.5;
+    transition: all 300ms ease;
+    margin: 15px;
+}
+
+#gallery .slick-dotted.slick-slider {
+    margin-bottom: 35px;
+}
+
+.gallery-carousel .slick-center img:hover, .gallery-carousel .slick-slide.slick-active img:hover {
+    transform: scale(1.1);
+}
+
+/*стиль активной центральной картинки, стиль двух активных картинок по краям центральной*/
+.gallery-carousel .slick-center img, .gallery-carousel .slick-slide.slick-active img {
+    opacity: 1;
+}
+
+/*контейнер для dots и buttons*/
+#gallery .gallery-content-slick {
+    position: relative;
+    margin: 25px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 300px;
+}
+
+/*позиционирование левой и правой стрелки*/
+#gallery .slick-prev {
+    left: -5%;
+}
+#gallery .slick-next {
+    right: -5%;
+}
+
+
+#gallery .slick-slider .slick-track, .slick-slider .slick-list {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*меняю вид стрелки*/
+#gallery .slick-prev:before {
+    content: url("../images/prev.png");
+}
+
+/*меняю вид стрелки*/
+#gallery .slick-next:before {
+    content: url("../images/next.png");
+}
+
+/*обертка для dots*/
+#gallery .slick-dots {
+    position: static;
+}
+
+/*стиль неактивных dots*/
+#gallery .slick-dots li button {
+    border-width: 1px;
+    border-color: rgb(114, 17, 99);
+    border-style: solid;
+    border-radius: 50%;
+    background: transparent;
+    width: 15px;
+    height: 15px;
+}
+
+/*стиль активной dot*/
+#gallery .slick-dots li.slick-active button {
+    border-radius: 50%;
+    background-color: rgb(114, 17, 99);
+    width: 17px;
+    height: 17px;
+}
+
+/*убрала стандартные точки*/
+#gallery .slick-dots li button:before {
+    content: '';
+}
+
+img.mfp-img {
+    height: 500px !important;
+    padding: 0;
+}
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+    right: 0px;
+    top: -35px;
+}
+
+
+#faq {
+    background-image: url("../images/faq-roses.png"), url("../images/faq-bg.png");
+    background-repeat: no-repeat;
+    padding: 44px 0;
+}
+
+#faq-container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#faq-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 53px;
+}
+
+#faq-form {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
+    width: 465px;
+    padding: 30px 37px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#faq-form form {
+    text-align: center;
+}
+
+#faq-form-text {
+    font-size: 18px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.167;
+    text-align: center;
+    width: 392px;
+    margin-bottom: 30px;
+}
+
+#faq-form-text span {
+    font-family: "Nunito Bold", sans-serif;
+    color: #721163;
+}
+
+#faq-form label input {
+    border: 1px solid rgb(114, 17, 99);
+    background-color: rgb(245, 239, 243);
+    width: 282px;
+    border-radius: 30px;
+    padding: 15px 21px;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+#faq ::placeholder {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(114, 17, 99);
+}
+
+#faq form > div {
+    margin: 15px 0;
+}
+
+#faq form > div:last-child {
+    margin-bottom: 0;
+}
+
+#faq-form-rose {
+    position: absolute;
+    bottom: 10px;
+    right: 55px;
+}
+
+#faq button.btn {
+    width: 282px;
+    font-size: 16px;
+    color: rgb(250, 247, 250);
+    padding: 16px;
+    text-align: center;
+}
+
+/*заголовки аккордеона*/
+#faq-accordion h3 {
+    font-size: 18px;
+    font-family: "Nunito SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-top: 20px;
+    line-height: 19px;
+}
+
+/*активный заголовка блока аккордеона*/
+#faq-accordion h3#first-block-title {
+    margin-top: 0;
+}
+
+/*текст активного блока аккордеона*/
+#faq .group p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    border-top: 1px solid rgb(114, 17, 99);
+    padding: 30px 0 30px 0;
+    line-height: 1.2;
+}
+
+/*номер в тексте активного блока*/
+#faq .group p span {
+    color: #721163;
+    font-family: "Nunito Bold", sans-serif;
+}
+
+/*блок заголовков аккордеона*/
+#faq .ui-accordion .ui-accordion-header {
+    padding: 30px;
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    width: 715px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*общий, активный блок аккордеона*/
+#faq .group {
+    border-radius: 8px;
+    background-color: rgb(250, 247, 250);
+    box-shadow: 0 2px 9.2px 0.8px rgba(67, 6, 57, 0.12);
+}
+
+/*скругление нижних углов блока*/
+#faq .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br, .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-radius: 0 0 8px 8px;
+}
+
+#faq .ui-accordion-header-active {
+    box-shadow: none !important;
+}
+
+/*отступы для текста активного блока*/
+#faq .ui-accordion .ui-accordion-content {
+    padding: 0 30px 0 30px;
+}
+
+/*перекрыла стандартный белый фон*/
+#faq .ui-widget-content {
+    background: rgb(250, 247, 250);
+}
+
+/*отключает синюю границу у активного блока*/
+#faq .ui-state-default, .ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover,
+html .ui-button.ui-state-disabled:active {
+    border: none;
+}
+
+/*стрелка для неактивной h3 аккордеона*/
+.ui-icon, .ui-widget-content .ui-icon {
+    background-image: url("../images/down-arrow.png") !important;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 22px;
+    height: 12px;
+}
+
+.ui-icon-triangle-1-e, .ui-icon-triangle-1-s {
+    background-position: 0;
+}
+
+/*стрелка для активной h3 аккордеона*/
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    background-image: url("../images/up-arrow.png") !important;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 22px;
+    height: 12px;
+}
+
+
+#contacts {
+    padding-top: 110px;
+    background-image: url("../images/Contacts-roses.png");
+    background-repeat: no-repeat;
+    background-position-x: 87%;
+    padding-bottom: 195px;
+}
+
+#contacts-container {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+#contacts .block-title {
+    font-size: 36px;
+    line-height: 34px;
+}
+
+#contacts #our_salons {
+    font-size: 20px;
+    font-family: "Nunito Bold", sans-serif;
+    color: rgb(44, 5, 38);
+    margin-bottom: 15px;
+    line-height: 21px;
+    margin-top: 60px;
+}
+
+#contacts #addresses {
+    width: 220px;
+    font-size: 16px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 19px;
+}
+
+#contacts-wrap {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+#contacts .contacts-wrap-title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: "Nunito SemiBold", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 20px;
+}
+
+#contacts .contacts-wrap-text {
+    font-size: 16px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#contacts #contacts-wrap-first {
+    margin-bottom: 40px;
+}
+
+#contacts .my_map {
+    width: 790px;
+    height: 430px;
+}
+
+#contacts-img {
+    position: absolute;
+    bottom: -173px;
+    left: -158px;
+}
+
+#footer {
+    background-color: #faf7fa;
+    padding: 22px 0;
+}
+
+#footer-container {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer #icons {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer svg.footer-icon {
+    fill: #2c0526;
+    height: 24px;
+    width: 24px;
+}
+
+#footer svg.footer-icon.youtube {
+    height: 34px;
+    width: 34px;
+}
+
+#footer svg.vk-icon {
+    fill: #721163;
+    height: 38px;
+}
+
+svg:hover {
+    fill: #721163 !important;
+}
+
+#footer #schedule {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#sign_up-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(37, 24, 31, 0.702);
+    z-index: 999;
+    align-items: center;
+}
+
+#sign_up {
+    border-radius: 15px;
+    background-color: rgb(250, 247, 250);
+    padding: 48px 60px 60px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#sign_up #sign_up-cancel {
+    position: absolute;
+    top: 0;
+    right: -65px;
+    cursor: pointer;
+}
+
+#sign_up .sign_up-input input, #sign_up .sign_up-select select {
+    border: 1px solid rgb(114, 17, 99);
+    background-color: transparent;
+    width: 303px;
+    border-radius: 30px;
+    outline: 0;
+    box-sizing: border-box;
+    padding: 15px 21px;
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#sign_up .sign_up-select option {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#sign_up .sign_up-select select {
+    background-image: url("../images/select-arrow.png");
+    background-repeat: no-repeat;
+    -webkit-appearance: none;
+    background-position-x: 93%;
+    background-position-y: 50%;
+}
+
+#sign_up div.sign_up-input, div.sign_up-select {
+    padding: 12px 0;
+}
+
+#sign_up-button .btn {
+    width: 196px;
+    padding: 16px;
+    text-align: center;
+}
+
+#sign_up-button {
+    margin-top: 48px;
+}
+
+#sign_up ::placeholder {
+    font-size: 14px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+}
+
+#sign_up #sent {
+    display: none;
+    margin: 141px 66px 131px;
+}
+
+#sign_up #sent-title {
+    font-size: 20px;
+    font-family: "Nunito Bold", sans-serif;
+    color: rgb(114, 17, 99);
+    margin-bottom: 27px;
+    line-height: 23px;
+}
+
+#sign_up #sent-text {
+    font-size: 18px;
+    font-family: "Nunito Regular", sans-serif;
+    color: rgb(44, 5, 38);
+    line-height: 1.2;
+    width: 280px;
+}
+
+#sign_up-content {
+    /*display: none;*/
+}
+
+#sign_up-error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+#faq #faq-form-sent {
+    display: none;
+    margin: 100px 0;
+}
+
+#faq #faq-form-error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+#faq #faq-form-button {
+    text-align: center;
+}
+
+#faq #faq-form-sent-text {
+    font-family: "Nunito Bold", sans-serif;
+    color: #721163;
+    font-size: 25px;
+}
+
+#burger {
+    display: none;
+    color: rgb(67, 6, 57);
+    font-size: 30px;
+    line-height: 30px;
+}
+
+#menu svg {
+    display: none;
+}

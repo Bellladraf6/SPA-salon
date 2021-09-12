@@ -1,0 +1,483 @@
+/*более 1920*/
+@media screen and (min-width: 1921px) {
+    #main, #advantages, #stock, #faq {
+        background-size: 100%;
+    }
+}
+
+/*от 1401 до 1700px*/
+@media screen and (max-width: 1700px) {
+    #services #lavender {
+        z-index: -1;
+        width: 20%;
+    }
+}
+
+/*от 1231 до 1400px*/
+@media screen and (max-width: 1400px) {
+    #services #lavender {
+        display: none;
+    }
+}
+
+/*от 1024 до 1229px*/
+@media screen and (max-width: 1229px) {
+    #main {
+        background-position-x: 40%;
+    }
+
+    #header #menu, #header .tel {
+        width: 30%;
+    }
+
+    #banner, #advantages-container, #services-container, #header-container,
+    #services-products, #stock-container, #masters-container, #gallery-container,
+    #contacts-container, #faq-container, #footer-container {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    #services-products {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #services .services-product {
+        margin: 40px 60px;
+    }
+
+    #stock {
+        background-position-x: 40%;
+    }
+
+    #masters .content-slick {
+        width: 100px;
+    }
+
+    #masters .slick-initialized .slick-slide {
+        justify-content: center;
+    }
+
+    #faq {
+        background-size: auto 100%;
+    }
+
+    #faq-form {
+        margin-top: 50px;
+    }
+
+    #faq-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/*от 768 до 1023px*/
+@media screen and (max-width: 1023px) {
+    #header #menu, #header .tel {
+        width: 35%;
+    }
+
+    #advantages #advantages-container .advantages-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #advantages #advantages-first-wrap, #advantages #advantages-second-wrap {
+        justify-content: space-evenly;
+        width: 1000px;
+        margin-left: 0;
+    }
+
+    #advantages #advantages-container .advantages-item span {
+        margin-left: 0;
+        margin-top: 20px;
+        height: 70px;
+    }
+
+    #advantages #advantages-container .advantages-item span br {
+        display: none;
+    }
+
+    #services .services-product {
+        margin: 30px 20px;
+    }
+
+    #masters .slick-slide img {
+        width: 350px;
+    }
+
+    #gallery {
+        padding-bottom: 130px;
+    }
+
+    #contacts .my_map {
+        width: 430px;
+    }
+
+    #footer-container {
+        flex-wrap: wrap;
+    }
+
+    #footer #icons {
+        width: 200px;
+        order: 2;
+    }
+
+    #footer .logo {
+        order: 1;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    #footer #schedule {
+        order: 3;
+    }
+
+    #footer .tel {
+        order: 4;
+    }
+}
+
+
+/*от 425 до 767px*/
+@media screen and (max-width: 767px) {
+    #advantages-container, #services-container, #masters-container, #gallery-container, #faq-container,
+    #contacts-container, #contacts #addresses, #contacts .my_map {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #main {
+        background-position-x: 54%;
+    }
+
+    #burger {
+        display: block;
+    }
+
+    #header #menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin: 0;
+        padding-top: 30px;
+        background: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+
+    #header #menu a.active {
+        color: #8a1578;
+    }
+
+    #header #menu a {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: #6c1a5f;
+    }
+
+    #header.menu-open #menu {
+        display: flex;
+    }
+
+    #menu svg {
+        display: block;
+        width: 22px;
+        fill: #6c1a5f;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    #header .tel {
+        width: 36%;
+    }
+
+    #banner {
+        padding-top: 70px;
+    }
+
+    #banner .block-title {
+        max-width: 250px;
+    }
+
+    #banner #banner-text br {
+        display: none;
+    }
+
+    #banner #banner-text {
+        width: 100%;
+    }
+
+    #advantages {
+        padding-bottom: 120px;
+    }
+
+    #advantages #advantages-content {
+        margin-top: 40px;
+    }
+
+    #advantages #advantages-container .advantages-item {
+        margin: 20px 0;
+    }
+
+    #advantages #advantages-first-wrap, #advantages #advantages-second-wrap {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #services #services-text, #masters .masters-text, #gallery .gallery-text {
+        max-width: 380px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #stock #stock-text {
+        width: 280px;
+    }
+
+    #masters .content-slick {
+        width: 200px;
+    }
+
+    #faq .group, #faq .ui-accordion .ui-accordion-header, #faq-form {
+        width: 370px;
+    }
+
+    #faq .ui-accordion .ui-accordion-header {
+        padding: 30px 60px;
+    }
+
+    #faq-form-text {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    #faq-form label input {
+        padding: 10px 21px;
+        width: 90%;
+    }
+
+    #faq button.btn {
+        padding: 11px;
+        width: 90%;
+    }
+
+    #contacts {
+        padding-bottom: 105px;
+    }
+
+    #contacts-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #contacts .my_map {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+    #contacts-wrap {
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+
+    #contacts-img {
+        z-index: -9;
+        top: 0;
+        left: -200px;
+    }
+
+    #footer-container {
+        flex-direction: column;
+    }
+
+    #footer #icons {
+        order: 4;
+    }
+
+    #footer #schedule {
+        order: 2;
+        margin-bottom: 25px;
+    }
+
+    #footer .tel {
+        order: 3;
+        margin-bottom: 25px;
+    }
+
+    #sign_up #sent-text {
+        max-width: 280px;
+    }
+
+    #sign_up #sent {
+        margin: 40px 0;
+    }
+
+    img.mfp-img {
+        height: auto !important;
+    }
+    #sign_up {
+        padding: 40px;
+    }
+
+    #sign_up #sign_up-cancel {
+        right: 4px;
+    }
+
+    #sign_up-container {
+        overflow: scroll;
+        align-items: flex-start;
+        padding-top: 25px;
+    }
+
+    #sign_up-button {
+        margin-top: 30px
+    }
+}
+
+
+/*от 375 до 424px*/
+@media screen and (max-width: 424px) {
+    #header .tel {
+        width: 42%;
+        font-size: 13px;
+    }
+
+    #masters .master-block-text {
+        width: 200px;
+    }
+
+    #masters .master-block-text .master-name {
+        margin-bottom: 10px;
+    }
+
+    #services #services-text, #masters .masters-text, #gallery .gallery-text {
+        width: 100%;
+    }
+
+    #masters .slick-slide img {
+        width: 90%;
+    }
+
+    .mfp-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    #gallery .gallery-carousel img {
+        width: 320px;
+    }
+
+    #faq .group, #faq .ui-accordion .ui-accordion-header, #faq-form {
+        width: 100%;
+    }
+
+    #faq #faq-form-sent {
+        margin: 55px 0;
+    }
+
+    #sign_up .sign_up-input input, #sign_up .sign_up-select select {
+        width: 280px;
+    }
+}
+
+/*от 320 до 374px*/
+@media screen and (max-width: 374px) {
+    .block-title {
+        font-size: 28px;
+    }
+
+    #main {
+        height: 770px;
+    }
+
+    #header .tel {
+        display: none;
+    }
+
+    #banner .block-title {
+        font-size: 33px;
+    }
+
+    #banner #banner-text {
+        font-size: 18px;
+    }
+
+    #banner .banner-action {
+        text-align: center;
+
+    }
+    #banner .btn{
+        width: 90%;
+    }
+
+    #gallery .gallery-carousel img {
+        width: 270px;
+    }
+
+    #gallery .slick-dots li {
+        margin: 0 2px;
+    }
+
+    #gallery .gallery-content-slick {
+        max-width: 250px;
+    }
+
+    #stock #stock-text {
+        width: 100%;
+    }
+
+    #sign_up .sign_up-input input, #sign_up .sign_up-select select {
+        width: 200px;
+    }
+
+    #sign_up div.sign_up-input, div.sign_up-select {
+        padding: 10px 0;
+    }
+
+    #sign_up-button {
+        margin-top: 20px;
+    }
+
+    #sign_up #sent-text {
+        max-width: 200px;
+    }
+
+    #faq #faq-form-sent {
+        margin: 30px 0;
+    }
+
+    #faq-form-text {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #faq-form-rose {
+        bottom: 0;
+        right: 0;
+    }
+
+    #contacts {
+        background-size: 50%;
+    }
+}
+
+
+
+
