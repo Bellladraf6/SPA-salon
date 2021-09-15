@@ -20,12 +20,12 @@
 
 @font-face {
     font-family: "Nunito Bold";
-    src: url("../fonts/Nunito-Bold.woff");
+    src: url("../fonts/Nunito-Bold.ttf");
 }
 
 @font-face {
     font-family: "Myriad Pro Regular";
-    src: url("../fonts/Myriad Pro.ttf");
+    src: url("../fonts/MYRIADPRO-REGULAR.otf");
 }
 
 body, h3, h5, h4, h2 {
@@ -47,7 +47,8 @@ body, h3, h5, h4, h2 {
 }
 
 .logo-text {
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     font-size: 10px;
     color: #430639;
     text-transform: uppercase;
@@ -55,7 +56,8 @@ body, h3, h5, h4, h2 {
 
 .tel {
     font-size: 14px;
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
 }
 
 .tel a, .tel {
@@ -80,7 +82,8 @@ body, h3, h5, h4, h2 {
     line-height: 14px;
     background-color: rgb(114, 17, 99);
     box-sizing: border-box;
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     color: rgb(255, 255, 255);
     outline: 0;
     cursor: pointer;
@@ -92,8 +95,10 @@ body, h3, h5, h4, h2 {
 
 
 #main {
-    background: url("../images/main-bg.png");
+    background-image: url("../images/main-bg.png");
     height: 862px;
+    width: 100%;
+    background-position: center;
 }
 
 #main #header {
@@ -117,22 +122,24 @@ body, h3, h5, h4, h2 {
 }
 
 #header #menu a {
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     text-decoration: none;
     font-size: 13px;
     color: rgb(44, 5, 38);
     border-bottom: 1px solid transparent;
 }
 
-#header #menu a.active {
-    font-family: "Nunito ExtraBold", sans-serif;
+#header #menu a:hover {
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 800;
     color: rgb(114, 17, 99);
     border-bottom: 1px solid rgb(114, 17, 99);
 }
 
 #header .logo {
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #main .tel {
@@ -153,6 +160,7 @@ body, h3, h5, h4, h2 {
 #banner .block-title span {
     font-size: 70px;
     font-family: "Marguaritas", sans-serif;
+    font-weight: 500;
 }
 
 #banner #banner-text {
@@ -207,7 +215,7 @@ body, h3, h5, h4, h2 {
     font-family: "Nunito Regular", sans-serif;
     color: #2c0526;
     line-height: 1.2;
-    max-width: 282px;
+    max-width: 290px;
     margin-left: 30px;
 }
 
@@ -259,14 +267,15 @@ body, h3, h5, h4, h2 {
     font-family: "Nunito Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.357;
-    width: 245px;
+    width: 247px;
     height: 90px;
     margin-bottom: 20px;
 }
 
 #services .services-product-duration {
     font-size: 12px;
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     color: rgb(114, 17, 99);
     margin-bottom: 20px;
 }
@@ -300,8 +309,17 @@ body, h3, h5, h4, h2 {
     height: 558px;
     background-color: rgb(245, 244, 243);
     background-repeat: no-repeat;
-    background-image: url("../images/roses-bg3.png"), url("../images/right-ellipse.png"),
+    background-image: url("../images/right-ellipse.png"),
     url("../images/left-ellipse.png"), url("../images/stock-bg.png");
+    width: 100%;
+    background-position: center;
+    position: relative;
+}
+
+#stock #roses-stock {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #stock-container {
@@ -312,7 +330,8 @@ body, h3, h5, h4, h2 {
 
 #stock #stock-text {
     font-size: 18px;
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     color: rgb(44, 5, 38);
     line-height: 1.167;
     width: 355px;
@@ -342,7 +361,7 @@ body, h3, h5, h4, h2 {
     font-family: "Nunito Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.313;
-    width: 505px;
+    width: 530px;
     margin-bottom: 46px;
 }
 
@@ -369,20 +388,23 @@ body, h3, h5, h4, h2 {
 /*навигация картинок слика*/
 #masters .content-slick {
     position: relative;
-    width: 63px;
+    width: 64px;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 /*позиционирование левой стрелки*/
 #masters .slick-prev {
     left: -14px;
+    top: 45%;
 }
 
 /*позиционирование правой стрелки*/
 #masters .slick-next {
     right: -14px;
+    top: 45%;
 }
 
 /*меняю вид стрелки*/
@@ -400,9 +422,14 @@ body, h3, h5, h4, h2 {
     position: static;
 }
 
+#masters .slick-dots li {
+    height: 0;
+    margin: 0 3px;
+}
+
 /*стиль неактивных dots*/
 #masters .slick-dots li button {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "Nunito Regular", sans-serif;
     color: #ab84a3;
 }
@@ -472,7 +499,7 @@ body, h3, h5, h4, h2 {
     font-family: "Nunito Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.313;
-    width: 680px;
+    width: 684px;
     margin-bottom: 35px;
 }
 
@@ -482,7 +509,7 @@ body, h3, h5, h4, h2 {
     position: relative;
     opacity: 0.5;
     transition: all 300ms ease;
-    margin: 15px;
+    margin: 15px 13px;
 }
 
 #gallery .slick-dotted.slick-slider {
@@ -504,7 +531,7 @@ body, h3, h5, h4, h2 {
     margin: 25px auto 0 auto;
     display: flex;
     justify-content: space-evenly;
-    max-width: 300px;
+    max-width: 312px;
 }
 
 /*позиционирование левой и правой стрелки*/
@@ -609,13 +636,18 @@ img.mfp-img {
     text-align: center;
 }
 
+#faq .error-input {
+    margin-left: 75px;
+    position: static;
+}
+
 #faq-form-text {
     font-size: 18px;
     font-family: "Nunito Regular", sans-serif;
     color: rgb(44, 5, 38);
     line-height: 1.167;
     text-align: center;
-    width: 392px;
+    width: 393px;
     margin-bottom: 30px;
 }
 
@@ -644,10 +676,6 @@ img.mfp-img {
     margin: 15px 0;
 }
 
-#faq form > div:last-child {
-    margin-bottom: 0;
-}
-
 #faq-form-rose {
     position: absolute;
     bottom: 10px;
@@ -665,7 +693,8 @@ img.mfp-img {
 /*заголовки аккордеона*/
 #faq-accordion h3 {
     font-size: 18px;
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     color: rgb(44, 5, 38);
     margin-top: 20px;
     line-height: 19px;
@@ -722,6 +751,8 @@ img.mfp-img {
 /*отступы для текста активного блока*/
 #faq .ui-accordion .ui-accordion-content {
     padding: 0 30px 0 30px;
+    width: 715px;
+    box-sizing: border-box;
 }
 
 /*перекрыла стандартный белый фон*/
@@ -792,7 +823,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 #contacts #addresses {
-    width: 220px;
+    width: 224px;
     font-size: 16px;
     font-family: "Nunito Regular", sans-serif;
     color: rgb(44, 5, 38);
@@ -807,7 +838,8 @@ html .ui-button.ui-state-disabled:active {
 #contacts .contacts-wrap-title {
     margin-bottom: 15px;
     font-size: 20px;
-    font-family: "Nunito SemiBold", sans-serif;
+    font-family: "Nunito Regular", sans-serif;
+    font-weight: 600;
     color: rgb(44, 5, 38);
     line-height: 20px;
 }
@@ -841,9 +873,10 @@ html .ui-button.ui-state-disabled:active {
 #footer-container {
     margin: 0 auto;
     width: 1200px;
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;*/
     align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
 }
 
 #footer #icons {
@@ -865,7 +898,6 @@ html .ui-button.ui-state-disabled:active {
 }
 
 #footer svg.vk-icon {
-    fill: #721163;
     height: 38px;
 }
 
@@ -877,6 +909,7 @@ svg:hover {
     font-size: 14px;
     font-family: "Nunito Regular", sans-serif;
     color: rgb(44, 5, 38);
+    text-align: center;
 }
 
 #sign_up-container {
@@ -936,7 +969,7 @@ svg:hover {
 }
 
 #sign_up div.sign_up-input, div.sign_up-select {
-    padding: 12px 0;
+    margin-bottom: 24px;
 }
 
 #sign_up-button .btn {
@@ -946,7 +979,7 @@ svg:hover {
 }
 
 #sign_up-button {
-    margin-top: 48px;
+    margin-top: 60px;
 }
 
 #sign_up ::placeholder {
@@ -980,12 +1013,14 @@ svg:hover {
     /*display: none;*/
 }
 
-#sign_up-error {
+form .error-input {
     color: red;
     font-size: 14px;
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: none;
+    margin-left: 20px;
+    position: absolute;
 }
 
 #faq #faq-form-sent {

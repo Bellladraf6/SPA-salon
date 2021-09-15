@@ -138,55 +138,112 @@ $(document).ready(function () {
     });
 
     $('#sign_up-button > button').click(() => {
+        $('#sign_up .error-input').hide();
         let name = $('#name');
         let phone = $('#phone');
         let ritual = $('#ritual');
         let datetime = $('#datetime');
 
-        if (name.val() && phone.val() && ritual.val() && datetime.val()) {
-            $.ajax({
-                type: 'post',
-                url: 'mail.php',
-                data: 'name=' + name.val() + '&phone=' + phone.val() + '&ritual=' + ritual.val() + '&datetime=' + datetime.val(),
-                success: () => {
-                    $('#sent').show();
-                    $('#sign_up-content').hide();
-                },
-                error: () => {
-                    $('#sign_up-container').hide();
-                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
-                }
-            });
+        let hasError = false;
+        //если нет значения
+        if (!name.val()) {
+            name.siblings('.error-input').show();
+            hasError = true;
+            $(name).css('border-color', 'red');
         } else {
-            $('#sign_up-error').show();
-            name.css('border-color', 'red');
-            phone.css('border-color', 'red');
-            ritual.css('border-color', 'red');
-            datetime.css('border-color', 'red');
+            $(name).css('border-color', '');
         }
+
+        // если нет значения
+        if (!phone.val()) {
+            phone.siblings('.error-input').show();
+            hasError = true;
+            $(phone).css('border-color', 'red');
+        } else {
+            $(phone).css('border-color', '');
+        }
+
+        // если нет значения
+        if (!ritual.val()) {
+            ritual.siblings('.error-input').show();
+            hasError = true;
+            $(ritual).css('border-color', 'red');
+        } else {
+            $(ritual).css('border-color', '');
+        }
+
+        // если нет значения
+        if (!datetime.val()) {
+            datetime.siblings('.error-input').show();
+            hasError = true;
+            $(datetime).css('border-color', 'red');
+        } else {
+            $(datetime).css('border-color', '');
+        }
+
+        if (name.val() && phone.val() && ritual.val() && datetime.val()) {
+            $('#sent').show();
+            $('#sign_up-content').hide();
+
+            // Раскомментировать, если размещать на хостинге!
+            // $.ajax({
+            //     type: 'post',
+            //     url: 'mail.php',
+            //     data: 'name=' + name.val() + '&phone=' + phone.val() + '&ritual=' + ritual.val() + '&datetime=' + datetime.val(),
+            //     success: () => {
+            //         $('#sent').show();
+            //         $('#sign_up-content').hide();
+            //     },
+            //     error: () => {
+            //         $('#sign_up-container').hide();
+            //         alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+            //     }
+            // });
+        }
+        // else {
+        //     $('#sign_up-error').show();
+        //     alert('Возникла ошибка при оформлении заказа, позвоните нам и сделайте заказ')
+        // }
     });
 
+
     $('#faq-form-button > button').click(() => {
+        $('#faq .error-input').hide();
         let your_phone = $('#your-phone');
+        let hasError = false;
+
+        // если нет значения
+        if (!your_phone.val()) {
+            your_phone.siblings('.error-input').show();
+            hasError = true;
+            $(your_phone).css('border-color', 'red');
+        } else {
+            $(your_phone).css('border-color', '');
+        }
 
         if (your_phone.val()) {
-            $.ajax({
-                type: 'post',
-                url: 'mail2.php',
-                data: 'your_phone=' + your_phone.val(),
-                success: () => {
-                    $('#faq-form-sent').show();
-                    $('#faq-form-content').hide();
-                },
-                error: () => {
-                    $('#faq-form').hide();
-                    alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
-                }
-            });
-        } else {
-            $('#faq-form-error').show();
-            your_phone.css('border-color', 'red');
+            $('#faq-form-sent').show();
+            $('#faq-form-content').hide();
+
+            // Раскомментировать, если размещать на хостинге!
+            // $.ajax({
+            //     type: 'post',
+            //     url: 'mail2.php',
+            //     data: 'your_phone=' + your_phone.val(),
+            //     success: () => {
+            //         $('#faq-form-sent').show();
+            //         $('#faq-form-content').hide();
+            //     },
+            //     error: () => {
+            //         $('#faq-form').hide();
+            //         alert('Ошибка бронирования. Свяжитесь, пожалуйста, по номеру телефона.');
+            //     }
+            // });
         }
+        // else {
+        //     $('#faq-form-error').show();
+        //     your_phone.css('border-color', 'red');
+        // }
     });
 
     $('#burger').click(() => {
